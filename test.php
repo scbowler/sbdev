@@ -1,3 +1,3 @@
 <?php
 
-echo '<h1>Test file</h1>';
+echo '<h1>Test file has been updated</h1>';
