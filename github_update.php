@@ -1,3 +1,5 @@
 <?php
 
-shell_exec( 'cd ~/Applications/MAMP/htdocs/personal/sbdev && git reset --hard HEAD && git pull origin master' );
+echo shell_exec( 'cd /var/www/dev.sbdev && git pull origin dev' );
+
+echo '<h1>code ran</h1>';
