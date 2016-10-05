@@ -53,7 +53,7 @@ class Log{
 $log = new Log();
 
 $repo_map = array(
-    'website' => array(
+    'sbdev' => array(
         'dev' => array(
             'dir' => '/var/www/dev.sbdev/',
             'clone_url' => 'git@github.com:scbowler/sbdev.git',
