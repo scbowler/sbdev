@@ -198,7 +198,7 @@ if ($headers['X-GitHub-Event'] == 'pull_request'
         $log->info($e->getMessage());
     }
 } else {
-    $log->info(sprintf('Either the request wasnt a pull request (%s) or repository (%s) that made this call isnt defined in the repo map', $headers['X-GitHub-Event'], $git_repo_name));
+    $log->info(sprintf('Either the request wasnt a pull request (%s) or repository (%s) that made this call isnt defined in the repo map. Payload action is (%s)', $headers['X-GitHub-Event'], $git_repo_name, $payload['action']));
 }
 
 //exit;
