@@ -5,3 +5,5 @@
 <h2>Newline 11/28/2016 1158</h2>
 <h2>Newline 11/28/2016 1220</h2>
 <h2>Newline 11/28/2016 1402</h2>
+
+<a href="./lf_index.php">LF Test Page</a>
