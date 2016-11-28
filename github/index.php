@@ -161,7 +161,7 @@ if ($headers['X-GitHub-Event'] == 'pull_request'
             }
             //check current branch by returning branches from the command line into $branches variable
             exec('git branch', $branches);
-            $log->r()->info('current branch : ', $branches);
+            $log->r(false)->info('current branch : ', $branches);
             $on_correct_branch = false;
             foreach ($branches as $val) {
                 if (strpos($val, $branch) !== false
