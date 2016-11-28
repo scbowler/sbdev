@@ -185,7 +185,6 @@ if ($headers['X-GitHub-Event'] == 'pull_request'
             //pull latest changes
             exec('git pull', $output, $r);
 
-            $log->info('After pull: ' . $output . ' And $r: ' . $r);
             //change premissions on the .git directory
             exec('chmod -R 0770 .git');
         } else {
@@ -193,7 +192,7 @@ if ($headers['X-GitHub-Event'] == 'pull_request'
         }
 
 
-        $log->r()->info("output : ", $output);
+        $log->r(false)->info("output : ", $output);
         $log->info("output : ", $r);
     } catch (Exception $e) {
         $log->info($e->getMessage());
