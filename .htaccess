@@ -1,0 +1,5 @@
+AuthUserFile /home/pwd/dev/.htpasswd
+AuthName "Dev site, please login"
+AuthType Basic
+
+require valid-user
