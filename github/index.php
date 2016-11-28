@@ -183,7 +183,7 @@ if ($headers['X-GitHub-Event'] == 'pull_request'
 
             $log->info('pulling latest changes into ' . $branch);
             //pull latest changes
-            exec('git pull', $output, $r);
+            exec('git pull '.$remote.' '.$branch , $output, $r);
 
             //change premissions on the .git directory
             exec('chmod -R 0770 .git');
